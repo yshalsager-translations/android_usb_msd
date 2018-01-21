@@ -16,4 +16,5 @@ sistema bet kuriuo metugaliapeitiprogramėlės funkcijas</string>
 <string name="host_disable_success">Įrenginys dabarturėtųpradingtiiš J ūsų
 kompiuterio</string>
 <string name="host_noroot">Negaligautišakninės prieigos</string>
+<string name="file_picker_denied">Prašome suteikti prieigą prie saugyklos, kad pasiektumėte šį failą</string>
 </resources>
