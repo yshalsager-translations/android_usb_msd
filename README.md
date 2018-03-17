@@ -25,6 +25,10 @@ Standard gradle build process.
 ...are welcome, I'm looking for a better icon, and if you feel like implementing it before I do, a menu to create blank
 images. Feel free to translate the application to your own language as well.
 
+## See also
+- @morfikov has written up [a tutorial](https://gist.github.com/morfikov/0bd574817143d0239c5a0e1259613b7d) on setting up
+  your phone as a boot device for a LUKS setup
+
 ## Donations
 I've been asked for donation info, so here it is.  
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=SHUNWU2HDU7EY)  
