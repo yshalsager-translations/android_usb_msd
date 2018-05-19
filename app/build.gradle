@@ -17,7 +17,7 @@ android {
         applicationId "streetwalrus.usbmountr"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 7
+        versionCode 8
         versionName getVersionName()
     }
     buildTypes {
