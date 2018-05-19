@@ -39,14 +39,14 @@ class LicenseActivity : ListActivity() {
             }
         }
 
-        mList = findViewById(android.R.id.list) as ListView
+        mList = findViewById<ListView>(android.R.id.list)
         val licensesAdapter = LicenseArrayAdapter(licenseList)
         mList!!.adapter = licensesAdapter
     }
 
     override fun onListItemClick(l: ListView, v: View, position: Int, id: Long) {
         val licenseTextLayout = layoutInflater.inflate(R.layout.dialog_license, null, false)
-        val licenseTextView = licenseTextLayout.findViewById(R.id.textView) as TextView
+        val licenseTextView = licenseTextLayout.findViewById<TextView>(R.id.textView)
         val lic = (l.adapter as LicenseArrayAdapter).getItem(position)
         licenseTextView.text = InputStreamReader(assets.open("licenses/${lic.file}")).readText()
         licenseTextView.movementMethod = ScrollingMovementMethod()
@@ -73,15 +73,15 @@ class LicenseActivity : ListActivity() {
                 // Abuse the Preference layout whose ID was retrieved earlier to create our View
                 view = layoutInflater.inflate(prefLayout, parent, false)
                 if (android.os.Build.VERSION.SDK_INT >= 24)
-                    (view!!.findViewById(android.R.id.icon_frame) as View).visibility = View.GONE
-                (view!!.findViewById(android.R.id.icon) as ImageView).visibility = View.GONE
-                (view!!.findViewById(android.R.id.title) as TextView).text = name
-                val summary = view!!.findViewById(android.R.id.summary) as TextView
+                    (view!!.findViewById<View>(android.R.id.icon_frame)).visibility = View.GONE
+                (view!!.findViewById<ImageView>(android.R.id.icon)).visibility = View.GONE
+                (view!!.findViewById<TextView>(android.R.id.title)).text = name
+                val summary = view!!.findViewById<TextView>(android.R.id.summary)
                 if (type != null)
                     summary.text = type
                 else
                     summary.visibility = View.GONE
-                (view!!.findViewById(android.R.id.widget_frame) as ViewGroup).visibility = View.GONE
+                (view!!.findViewById<ViewGroup>(android.R.id.widget_frame)).visibility = View.GONE
             }
             return view
         }
