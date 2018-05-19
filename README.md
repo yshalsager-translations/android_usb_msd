@@ -1,9 +1,3 @@
-# Maintainer wanted
-I've completely lost interest in Android development, and I am looking for someone who would be willing to move the app
-forward. There are a few issues and feature requests to tackle that I simply can't justify making time for taking care
-of. If you're interested, please send me an email so we can discuss it. In the mean time, I will still review pull
-requests, but consider the issue tracker unattended.
-
 # USB Mountr
 A helper application to set the Mass Storage Device gadget up in Android kernels  
 [<img src="https://f-droid.org/badge/get-it-on.png"
