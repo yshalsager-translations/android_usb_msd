@@ -82,13 +82,13 @@ class MainActivity : Activity() {
                     "echo disk > $usb/f_mass_storage/luns",
                     "echo USBMountr > $usb/f_mass_storage/inquiry_string",
                     "echo 1 > $usb/enable",
-                    "echo > $usb/f_mass_storage/lun0/file",
-                    "echo $ro > $usb/f_mass_storage/lun0/ro",
-                    "echo $file > $usb/f_mass_storage/lun0/file",
+                    "[[ -f $usb/f_mass_storage/luns ]] && echo > $usb/f_mass_storage/lun0/file",
+                    "[[ -f $usb/f_mass_storage/luns ]] && echo $ro > $usb/f_mass_storage/lun0/ro",
+                    "[[ -f $usb/f_mass_storage/luns ]] && echo $file > $usb/f_mass_storage/lun0/file",
                     // Older kernels only support a single lun, cope with it
-                    "echo > $usb/f_mass_storage/lun/file",
-                    "echo $ro > $usb/f_mass_storage/lun/ro",
-                    "echo $file > $usb/f_mass_storage/lun/file",
+                    "[[ ! -f $usb/f_mass_storage/luns ]] && echo > $usb/f_mass_storage/lun/file",
+                    "[[ ! -f $usb/f_mass_storage/luns ]] && echo $ro > $usb/f_mass_storage/lun/ro",
+                    "[[ ! -f $usb/f_mass_storage/luns ]] && echo $file > $usb/f_mass_storage/lun/file",
                     "echo success"
             ))?.isEmpty() ?: true)) {
                 if (enable != "0") {
