@@ -80,6 +80,7 @@ class MainActivity : Activity() {
                     // Disable the feature if told to
                     "[[ 0 == $enable ]] && sed -e 's/mass_storage//' $usb/functions | cat > $usb/functions",
                     "echo disk > $usb/f_mass_storage/luns",
+                    "echo USBMountr > $usb/f_mass_storage/inquiry_string",
                     "echo 1 > $usb/enable",
                     "echo > $usb/f_mass_storage/lun0/file",
                     "echo $ro > $usb/f_mass_storage/lun0/ro",
