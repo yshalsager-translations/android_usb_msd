@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">USB Mountr</string>
+
+    <string name="licenses">التراخيص</string>
+    <string name="licenses_upstream">الكود المصدرى</string>
+
+    <string name="file_picker_nofile">لا شيء</string>
+
+    <!-- Visible in the activity -->
+    <string name="host_source_file">ملف النسخة</string>
+    <string name="host_ro">القراءة فقط</string>
+    <string name="host_ro_summary">منع الكمبيوتر من الكتابة على ملف النسخة</string>
+    <string name="host_serve">تركيب</string>
+    <string name="host_disable">إزالة</string>
+    <string name="host_help">سيقوم هذا التطبيق بمحاولة التكيف مع خدمات الUSB الخاصة بأندرويد، لكن من المرجح جدا أن يتجاوز النظام تأثير التطبيق فى أى لحظة.</string>
+
+    <!-- Toast messages -->
+    <string name="host_success">يجب أن يظهر الجهاز اﻵن على جهاز الكمبيوتر الخاص بك</string>
+    <string name="host_disable_success">يجب أن يختفى الجهاز اﻵن من على جهاز الكمبيوتر الخاص بك</string>
+    <string name="host_noroot">لا يمكن الحصول على صلاحيات الرووت</string>
+    <string name="file_picker_denied">من فضلك قم بمنح صلاحيات الوصول للتخزين حتي يتمكن التطبيق من الوصول للملف</string>
+</resources>
